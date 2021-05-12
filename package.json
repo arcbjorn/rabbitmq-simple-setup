@@ -1,0 +1,28 @@
+{
+  "name": "rabbitmq-simple-setup",
+  "version": "1.0.0",
+  "description": "RabbitMQ & Nodejs setup with Docker & TS",
+  "scripts": {
+    "build": "tsc",
+    "build:clean": "tsc --clean",
+    "amqp:publish": "yarn build && node dist/publisher.js",
+    "amqp:consume": "yarn build && node dist/consumer.js",
+    "clean": "git clean -dfqX -- ./node_modules ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcbjorn/rabbitmq-simple-setup.git"
+  },
+  "author": "arcbjorn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arcbjorn/rabbitmq-simple-setup/issues"
+  },
+  "homepage": "https://github.com/arcbjorn/rabbitmq-simple-setup#readme",
+  "dependencies": {
+    "amqplib": "^0.7.1"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.5.17"
+  }
+}
