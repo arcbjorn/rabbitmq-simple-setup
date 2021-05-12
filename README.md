@@ -12,9 +12,9 @@ cd <project-folder>
 yarn amqp:publish
 
 # Run consumer
-yarn amqp:consumer
+yarn amqp:consume
 
 # Run consumer again to see what message was acknowledged by the channel
-yarn amqp:consumer
+yarn amqp:consume
 
 ```
